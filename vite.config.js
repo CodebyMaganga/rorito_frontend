@@ -12,5 +12,10 @@ export default defineConfig({
       },
     },
   },
+  build: {
+    rollupOptions: {
+      external: ["@material-tailwind/react"],
+    },
+  },
   plugins: [react()],
 });
