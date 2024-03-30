@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import "./App.css";
+import "./index.css";
 import Checkout from "./pages/Chekout";
 import Home from "./pages/Home";
 import { CartProvider } from "./components/CartContext";

@@ -20,12 +20,12 @@ const ProductCard = ({
   };
 
   return (
-    <div className="mt-10 bg-[#F4F4F8]">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 border">
+    <div className="mt-10 ">
+      <div className="grid  bg-[#F4F4F8] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 border">
         {displayedProducts.map((product) => (
           <div
             key={product.id}
-            className="max-w-sm rounded overflow-hidden shadow-lg mt-6"
+            className="max-w-sm rounded overflow-hidden shadow-lg mt-6 bg-[#FFFF]"
           >
             <img
               className="w-full h"
@@ -33,13 +33,11 @@ const ProductCard = ({
               alt={product.name}
             />
             <div className="px-6 py-4">
-              <div className="font-bold text-xl mb-2 text-gray-900 dark:text-white">
+              <div className="font-light text-lg mb-2 text-black ">
                 <a href="#">{product.name}</a>
               </div>
-              <div className="flex items-center justify-between">
-                <span className="text-lg  text-gray-900 dark:text-white">
-                  Ksh{product.price}
-                </span>
+              <div className="flex items-center justify-between ">
+                <span className="text-sm font-light  ">Ksh{product.price}</span>
                 <button
                   onClick={() => handleAddToCart(product)}
                   className="rounded-lg bg-cyan-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-cyan-800 focus:outline-none focus:ring-4 focus:ring-cyan-300 dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800"
