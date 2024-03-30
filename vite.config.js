@@ -1,8 +1,18 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  resolve: {
+    alias: {
+      // Add alias for @material-tailwind/react
+      "@material-tailwind/react": path.resolve(
+        __dirname,
+        "node_modules/material_tailwind"
+      ),
+    },
+  },
   server: {
     proxy: {
       "/api": {

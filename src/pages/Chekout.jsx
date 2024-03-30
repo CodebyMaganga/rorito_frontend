@@ -96,12 +96,14 @@ export default function Checkout() {
   return (
     <>
       <Navbar count={count} setCount={setCount} />
-      <h2 className="text-center font-bold text-lg mt-20">
-        Billing and Delivery details
-      </h2>
+      <div className="bg-[#F4F4F8] py-8 ">
+        <h2 className="text-center font-bold text-lg ">
+          Billing and Delivery details
+        </h2>
+      </div>
       <div>
         <img
-          className="w-full h-[200px] object-cover"
+          className="w-full h-[150px] sm:h-[200px] object-cover"
           src={banner}
           alt="lipanampea"
         />
@@ -187,12 +189,12 @@ export default function Checkout() {
 
         <div style={{ display: "flex" }} className="border ml-6 mr-6">
           <div style={{ flex: 1 }}>
-            <h2 className="text-center font-bold text-xl">Checkout</h2>
+            <h2 className="text-center font-light  text-xl">Checkout</h2>
             <table style={{ width: "100%" }}>
               <thead>
                 <tr className="border">
-                  <th>Product</th>
-                  <th className="border-l">Price</th>
+                  <th className="font-light">Product</th>
+                  <th className="border-l font-light">Price</th>
                 </tr>
               </thead>
               <tbody>
@@ -205,7 +207,7 @@ export default function Checkout() {
                 ))}
                 <tr className="border">
                   <td className="border px-4">Total</td>
-                  <td className="border-l px-4">
+                  <td className="border-l px-4 ">
                     ksh
                     {cart.reduce((total, item) => total + item.price, 0)}
                   </td>
