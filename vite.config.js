@@ -4,15 +4,15 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  resolve: {
-    alias: {
-      // Add alias for @material-tailwind/react
-      "@material-tailwind/react": path.resolve(
-        __dirname,
-        "node_modules/material_tailwind"
-      ),
-    },
-  },
+  // resolve: {
+  //   alias: {
+  //     // Add alias for @material-tailwind/react
+  //     "@material-tailwind/react": path.resolve(
+  //       __dirname,
+  //       "node_modules/material_tailwind"
+  //     ),
+  //   },
+  // },
   server: {
     proxy: {
       "/api": {
@@ -22,10 +22,10 @@ export default defineConfig({
       },
     },
   },
-  build: {
-    rollupOptions: {
-      external: ["@material-tailwind/react"],
-    },
-  },
+  // build: {
+  //   rollupOptions: {
+  //     external: ["@material-tailwind/react"],
+  //   },
+  // },
   plugins: [react()],
 });

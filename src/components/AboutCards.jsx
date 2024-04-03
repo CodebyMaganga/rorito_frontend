@@ -6,7 +6,7 @@ import { TbClock12 } from "react-icons/tb";
 const AboutCards = () => {
   return (
     <>
-      <div className="mb-4 grid place-items-center mt-4">
+      <div className="mb-4 grid place-items-center mt-4 border py-5 shadow-xl">
         <h2 className="font-bold text-lg">About Us</h2>
       </div>
       <div className="mt-4 grid place-items-center sm:flex sm:flex-row sm:justify-around">

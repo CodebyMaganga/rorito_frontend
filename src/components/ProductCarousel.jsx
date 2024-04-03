@@ -40,7 +40,9 @@ function ProductCarousel() {
             style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }} // Set background opacity here
           />
           <div className="absolute top-5 py-5 w-full text-lg font-light text-white text-center p-2 ">
-            <p className="line-clamp-3 tracking-wide">{slideTexts[index]}</p>
+            <p className="line-clamp-3 tracking-wide md:text-2xl md:font-bold">
+              {slideTexts[index]}
+            </p>
             <button className="bg-[#2AB7CA] px-5 py-2 mt-4">Shop now </button>
           </div>
         </div>
