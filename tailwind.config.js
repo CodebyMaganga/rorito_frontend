@@ -1,6 +1,5 @@
-// tailwind.config.js
-
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
@@ -10,3 +9,5 @@ module.exports = {
   },
   plugins: [require("@tailwindcss/forms")],
 };
+
+// tailwind.config.js
